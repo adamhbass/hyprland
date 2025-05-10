@@ -1,0 +1,20 @@
+configuration {
+    fake-transparency: true;
+    modi: "drun,run";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+    terminal: "kitty";
+    display-drun: " Apps";
+    display-run: " Run";
+    font: "JetBrainsMono Nerd Font 12";
+    lines: 10;
+    columns: 1;
+    location: 0;
+    width: 40;
+    padding: 20;
+    hide-scrollbar: true;
+
+    wmclass: "rofi";
+}
+
+@theme "style.rasi"

@@ -1,0 +1,16 @@
+
+@theme "/usr/share/rofi/themes/glue_pro_blue.rasi"
+configuration {
+    modi: "drun,run";
+    show-icons: true;
+    terminal: "kitty";  /* Or any terminal of your choice */
+    display-drun: " Apps";
+    display-run: " Run";
+    font: "mono 12";  /* Default Rofi font */
+    location: 0;
+    lines: 10;
+    columns: 1;
+    width: 50;
+    padding: 10;
+    hide-scrollbar: true;
+}

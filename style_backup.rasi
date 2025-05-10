@@ -1,0 +1,87 @@
+* {
+    background:                #121212;  /* Dark background for consistency */
+    foreground:                #e0e0e0;  /* Slightly lighter text for contrast */
+    border-color:              #313244;
+    separator-color:           #3c3f4c;  /* Slightly lighter separator */
+    spacing:                   5;
+    border-radius:             8;  /* Soft rounded corners */
+}
+
+window {
+    background-color: rgba(18, 18, 18, 0.8);  /* Darker with slight transparency */
+    border: 2;
+    border-color: #313244;
+    border-radius: 8;
+    padding: 20;
+}
+
+mainbox {
+    padding: 8;
+    spacing: 5;
+}
+
+listview {
+    fixed-height: 0;
+    lines: 10;
+    columns: 1;
+    spacing: 5;
+    cycle: true;
+    scrollbar: false;
+}
+
+element {
+    padding: 8;
+    background-color: rgba(15, 15, 15, 0.8);  /* Slightly darker grey for elements */
+    border: 1px;
+    border-radius: 8;
+}
+
+element normal {
+    text-color: #000000;  /* Black text for normal elements */
+    background-color: rgba(15, 15, 15, 0.8);
+}
+
+element selected {
+    background-color: #1c1c1c;  /* Darker grey for selection */
+    text-color: #89b4fa;  /* Light blue for selection */
+    border: 1px;
+    border-radius: 8;
+}
+
+element alternate.normal {
+    background-color: rgba(20, 20, 20, 0.9);  /* Darker alternate row background */
+}
+
+element alternate.selected {
+    background-color: #2b2b2b;
+    text-color: #89b4fa;
+    border-radius: 8;
+}
+
+entry {
+    background-color: #0f0f0f;  /* Darkest background for input */
+    text-color: #000000;  /* Black text for input */
+    border: 1;
+    border-color: #313244;
+    padding: 8;
+    border-radius: 8;
+}
+
+inputbar {
+    background-color: #0f0f0f;  /* Darker input bar */
+    text-color: #000000;  /* Black text for input bar */
+    padding: 10;
+    border-radius: 8;
+}
+
+prompt {
+    text-color: #89b4fa;  /* Keep prompt blue for contrast */
+}
+
+icon {
+    size: 24;
+    padding: 5;
+    border-radius: 8;
+    background-color: rgba(25, 25, 25, 0.7);  /* Slightly lighter background for icons */
+}
+
