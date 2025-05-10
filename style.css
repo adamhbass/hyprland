@@ -1,0 +1,58 @@
+* {
+  font-family: sans-serif;
+  font-size: 13px;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  border: none;
+}
+
+/* Core modules */
+#clock,
+#pulseaudio,
+#network,
+#battery,
+#custom-bluetooth,
+#custom-power,
+#tray {
+  padding: 0 10px;
+  margin: 0 4px;
+  background: #313244;
+  color: #cdd6f4;
+  border-radius: 6px;
+}
+
+/* Power icon highlight */
+#custom-power {
+  color: #f38ba8;
+}
+
+/* Battery color tweak */
+#battery {
+  color: #f9e2af;
+}
+
+/* Workspaces styling */
+#workspaces {
+  margin: 0 4px;
+  padding: 0 5px;
+  background: transparent;
+}
+
+#workspaces button {
+  all: unset;
+  padding: 0 8px;
+  margin: 0 2px;
+  color: #cdd6f4;
+  background-color: transparent;
+}
+
+#workspaces button.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#custom-bluetooth {
+  padding: 0 10px;
+  color: #6cb2eb;
+  font-size: 16px;
+}
