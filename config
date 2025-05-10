@@ -1,0 +1,60 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio", "custom/bluetooth", "network", "battery", "custom/power", "tray"],
+
+  "hyprland/workspaces": {
+    "format": "{name}"
+  },
+
+  "clock": {
+    "format": "{:%I:%M %p}",
+    "tooltip-format": "{:%A, %B %d, %Y}",
+    "interval": 60
+  },
+
+  "pulseaudio": {
+    "format": "🔊 {volume}%",
+    "format-muted": "🔇 Muted",
+    "scroll-step": 1
+  },
+
+  "network": {
+    "format-wifi": "🌐 {essid} ({signalStrength}%)",
+    "format-ethernet": "🌐 Ethernet",
+    "format-disconnected": "❌ Disconnected",
+    "on-click": "kitty nmtui"
+  },
+
+  "battery": {
+    "interval": 30,
+    "format": "🔋 {capacity}%",
+    "format-charging": "⚡ {capacity}%",
+    "format-plugged": "⚡ Plugged In",
+    "format-alt": "{time} left",
+    "tooltip": true
+  },
+
+
+"custom/bluetooth": {
+  "exec": "echo '󰂯'",
+  "format": "{}",
+  "on-click": "blueman-manager",
+  "tooltip": false,
+  "interval": 9999999
+},
+
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": "Power Menu",
+    "on-click": "~/.config/waybar/scripts/power-menu.sh",
+    "interval": 0
+  },
+
+  "tray": {
+    "icon-size": 16
+  }
+}
